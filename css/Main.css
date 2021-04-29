@@ -31,24 +31,31 @@ body {
   clear: both;
 
 }
-
+.research-section::after{
+  content: "";
+  display: table;
+  clear: both;
+}
   .recent-works{
     content: "";
     display: table;
     clear: both;}
 
   
-
-
 .image img{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 150px;
+}
+
+.image {
  
   width: 30%;
-  height: auto;
-  float: left;
-  border-radius: 50%;
-  padding: 100px;
-  padding-top: 0;
-  padding-bottom: 0;
+ float: left;
+  padding: 20px;
+  padding-left: 70px;
+  
   
   
   
@@ -59,12 +66,11 @@ body {
 }
 
  .paragraph {
-  padding: 100px; 
-  width: 50%;
-  float: left;
   padding-left: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 20px; 
+  width: 70%;
+  float: left;
+  
 }
 .works h3{
   text-align: center;
@@ -91,22 +97,22 @@ body {
   box-shadow: inset;
   background-color: #474e5d;
 }
-.expericene p{
-  font-size: 16px;
-}
-.research {
+
+
+.aura {
+  float: left;
   width: 50%;
-  margin: auto;
   padding: 20px;
 
   
 }
-.research p {
-  text-align: justify;
+.gebeya{
+  float: left;
+  width: 50%;
+  padding: 20px;
+
 }
-.research h4{
-  text-align: center;
-}
+
 .iframe-container {
   position: relative;
   width: 100%;
@@ -125,30 +131,26 @@ body {
   border: none;
 }
 
-.gebeya{
-  float:left;
-  width: 50%;
-  padding: 40px;
-  
-  
-}
+
 .gebeya p{
   text-align: justify;
 }
 .teach{
-  float:left;
-  width: 50%;
+  
+  width: 100%;
   padding: 40px;
 }
 .teach p{
   text-align: justify;
 }
-
+.research-section{
+  padding: 50px;
+  margin-bottom: 50px;
+  color: black;
+}
 .section-container{
   padding: 50px;
   margin-bottom: 50px;
-  
-  
   color: black;
 }
 .footer{
@@ -199,13 +201,19 @@ body {
   }}
   
   @media (max-width: 600px) {
-     .gebeya,.teach {
+     .teach {
       width: 100%;
       height: auto;
     }}
+@media(max-width:600px){
+  .aura ,.gebeya{
+    width: 100%;
+    height: auto;
+  }
+}
    
 @media(max-width:600px){
-  .footer ,.research-section{
+  .footer {
     width: 100%;
     height: auto;
   }
