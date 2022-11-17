@@ -46,15 +46,15 @@ body {
   width: 100%;
   max-width: 300px;
   height: auto;
-  border-radius: 150px;
+  border-radius: 200px;
 }
 
 .image {
  
-  width: 30%;
+  width: 40%;
  float: left;
   padding: 20px;
-  padding-left: 70px;
+  padding-left: 200px;
   
   
   
@@ -68,7 +68,7 @@ body {
  .paragraph {
   padding-left: 0;
   padding: 20px; 
-  width: 70%;
+  width: 60%;
   float: left;
   
 }
