@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#00274C;color:#F4F1E8;font-family:'Public Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#FFCB05;text-decoration:none}
+a:hover{color:#F4F1E8}
+img{display:block;max-width:100%}
+</style>
+</helmet>
+
+<div style="min-height:100vh;background:#00274C">
+
+<header style="position:sticky;top:0;z-index:10;background:rgba(0,39,76,0.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,0.16)">
+  <nav style="max-width:1120px;margin:0 auto;padding:16px 32px;display:flex;flex-wrap:wrap;gap:12px 32px;align-items:center;justify-content:space-between">
+    <a href="#top" style="font-family:'Newsreader',serif;font-size:20px;color:#F4F1E8">Tsedeniya S. Amare</a>
+    <div style="display:flex;flex-wrap:wrap;gap:24px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:0.02em">
+      <a href="#about" style="color:#c9d4e0" style-hover="color:#FFCB05">About</a>
+      <a href="#p1" style="color:#c9d4e0" style-hover="color:#FFCB05">01 Text entry</a>
+      <a href="#p2" style="color:#c9d4e0" style-hover="color:#FFCB05">02 CLC annotation</a>
+      <a href="#p3" style="color:#c9d4e0" style-hover="color:#FFCB05">03 Contesting AI</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top" style="max-width:1120px;margin:0 auto;padding:0 32px">
+
+  <section data-screen-label="Intro" style="padding:96px 0 80px;display:flex;flex-wrap:wrap;align-items:center;gap:48px 64px"><div style="flex:1 1 480px;display:flex;flex-direction:column;gap:28px">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#FFCB05;letter-spacing:0.06em;text-transform:uppercase">Portfolio</div>
+    <h1 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:clamp(48px,8vw,104px);line-height:0.98;letter-spacing:-0.02em">Tsedeniya S. Amare</h1>
+    <p style="margin:0;max-width:640px;font-size:clamp(18px,2vw,22px);line-height:1.45;color:#c9d4e0;text-wrap:pretty">Phd Candidate in Computer Science and Engineering at the University of Michigan</p>
+    </div>
+  </section>
+
+  <section id="about" data-screen-label="About" style="padding:64px 0;border-top:1px solid rgba(255,255,255,0.22);display:flex;flex-wrap:wrap;gap:24px 64px">
+    <div style="flex:0 0 200px;font-family:'JetBrains Mono',monospace;font-size:13px;color:#a3b4c8;text-transform:uppercase;letter-spacing:0.06em;padding-top:8px">About me</div>
+    <p style="flex:1 1 480px;margin:0;font-family:'Newsreader',serif;font-size:clamp(22px,2.4vw,28px);line-height:1.4;text-wrap:pretty">I’m a 5th year Ph.D candidate in the Computer Science and Engineering at the University of Michigan. My research focuses on human-AI interactions, with a specific focus on how end-user engage with AI systems, particularly when they lack expertise and AI literacy. I am working on developing a contestable design framework for AI systems, which aims to help improve design mechanisms to enable end-users to critically assess and contest AI.</p>
+  </section>
+
+  <section data-screen-label="Index" style="padding:32px 0 96px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
+    <a href="#p1" style="display:flex;flex-direction:column;gap:40px;padding:28px;background:#0b3563;border:1px solid rgba(255,255,255,0.16);border-radius:4px;color:#F4F1E8" style-hover="border-color:#FFCB05">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#FFCB05">01</span>
+      <span style="font-family:'Newsreader',serif;font-size:24px;line-height:1.2">Evaluating Text-Entry Experience for Multilingual Users</span>
+    </a>
+    <a href="#p2" style="display:flex;flex-direction:column;gap:40px;padding:28px;background:#0b3563;border:1px solid rgba(255,255,255,0.16);border-radius:4px;color:#F4F1E8" style-hover="border-color:#FFCB05">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#FFCB05">02</span>
+      <span style="font-family:'Newsreader',serif;font-size:24px;line-height:1.2">AI-enhanced Closed-loop Communication Annotation Tool for Medical Education</span>
+    </a>
+    <a href="#p3" style="display:flex;flex-direction:column;gap:40px;padding:28px;background:#0b3563;border:1px solid rgba(255,255,255,0.16);border-radius:4px;color:#F4F1E8" style-hover="border-color:#FFCB05">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#FFCB05">03</span>
+      <span style="font-family:'Newsreader',serif;font-size:24px;line-height:1.2">Assessing End-user Ability to Verify and Contest Adverse AI Decisions and Seek Recourse</span>
+    </a>
+  </section>
+
+  <!-- PROJECT 1 -->
+  <article id="p1" data-screen-label="Project 01" style="padding:96px 0;border-top:1px solid #F4F1E8;display:flex;flex-direction:column;gap:72px">
+    <header style="display:flex;flex-direction:column;gap:20px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#FFCB05;letter-spacing:0.06em;text-transform:uppercase">Project One</div>
+      <h2 style="margin:0;max-width:900px;font-family:'Newsreader',serif;font-weight:400;font-size:clamp(36px,5vw,60px);line-height:1.05;letter-spacing:-0.015em;text-wrap:balance">Evaluating Text-Entry Experience for Multilingual Users</h2>
+    </header>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <h3 style="margin:0;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:13px;color:#a3b4c8;text-transform:uppercase;letter-spacing:0.06em">Problem statement</h3>
+        <p style="margin:0;font-size:18px;line-height:1.6;text-wrap:pretty">Devices are designed with a default English interface and lack multilingual support for text-entry. We envision to bridge the parity of experience between the multilingual and English text-based communicators.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <h3 style="margin:0;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:13px;color:#a3b4c8;text-transform:uppercase;letter-spacing:0.06em">Solution statement</h3>
+        <p style="margin:0;font-size:18px;line-height:1.6;text-wrap:pretty">We identify usability issues for our users, brainstorm solutions, and conduct user studies on our prototype. We found breakdowns in switching between keyboards, autocorrect interruptions, and unhelpful text suggestions in context of text-messaging. We propose the creation of keyboard profiles and other autocorrect assistive tools for multilingual users, with qualitative testing for usability issue.</p>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:32px">Design Process</h3>
+      <ol style="margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:rgba(255,255,255,0.22);border:1px solid rgba(255,255,255,0.22)">
+        <li style="background:#00274C;padding:24px;display:flex;flex-direction:column;gap:10px"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#FFCB05">01</span><strong style="font-weight:600;font-size:16px">User research survey</strong><span style="font-size:14px;line-height:1.55;color:#c9d4e0">Designed and administered a survey across a diverse range of students. This survey created awareness of the current state of the tools within niche of multi language use in text-entry and provide direction for future research.</span></li>
+        <li style="background:#00274C;padding:24px;display:flex;flex-direction:column;gap:10px"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#FFCB05">02</span><strong style="font-weight:600;font-size:16px">User research interviews</strong><span style="font-size:14px;line-height:1.55;color:#c9d4e0">Contextual inquiries were conducted using adept users at multilingual communication, especially with mobile texting methods. These inquiries led to various key similarities in breakdowns such as interruptions with autocorrect, problems with switching and differentiating between various keyboard types, and unhelpful text suggestions.</span></li>
+        <li style="background:#00274C;padding:24px;display:flex;flex-direction:column;gap:10px"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#FFCB05">03</span><strong style="font-weight:600;font-size:16px">Solution ideations</strong><span style="font-size:14px;line-height:1.55;color:#c9d4e0">Using the findings, relevant user requirements were developed that met and inform many possible solutions. Developed user requirements and functional constraints.</span></li>
+        <li style="background:#00274C;padding:24px;display:flex;flex-direction:column;gap:10px"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#FFCB05">04</span><strong style="font-weight:600;font-size:16px">Prototyping</strong><span style="font-size:14px;line-height:1.55;color:#c9d4e0">Low Fidelity: Sketches, Storyboards, Paper prototype. Usability evaluation. High fidelity prototype.</span></li>
+      </ol>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:32px 64px;align-items:flex-start">
+      <div style="flex:1 1 320px;display:flex;flex-direction:column;gap:14px">
+        <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:32px">User Research: Survey</h3>
+        <p style="margin:0;font-size:17px;line-height:1.6;color:#dde4ec">The survey was conducted using Google forms and was generally on the topic of auto-correct and text suggestions.</p>
+        <p style="margin:0;font-size:17px;line-height:1.6;color:#dde4ec">We received 61 response for our survey questions.</p>
+      </div>
+      <figure style="flex:1 1 440px;margin:0;display:flex;flex-direction:column;gap:10px">
+        <div style="background:#fff;border:1px solid rgba(255,255,255,0.16);padding:16px;border-radius:4px"><img src="assets/image15.png" alt="Sample survey questions" style="width:100%"></div>
+        <figcaption style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#a3b4c8">Sample Survey Questions</figcaption>
+      </figure>
+    </div>
+
+    <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+      <div style="background:#fff;border:1px solid rgba(255,255,255,0.16);padding:24px;border-radius:4px"><img src="assets/image9.png" alt="Survey results chart" style="width:100%;max-width:900px;margin:0 auto"></div>
+      <figcaption style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#a3b4c8">Survey Results: Multilingual Keyboard Usage</figcaption>
+    </figure>
+
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <div style="display:flex;flex-wrap:wrap;gap:16px 64px">
+        <h3 style="flex:0 0 280px;margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:32px">Contextual Inquiries</h3>
+        <p style="flex:1 1 440px;margin:0;font-size:17px;line-height:1.6;color:#dde4ec;text-wrap:pretty">The contextual interviews were conducted through virtual and in-person meetings with the participants in private and familiar settings such as the participants’ residences to restrict external influences on the participants’ responses. Responses and clarified interpretations from the participants were recorded and used to construct sequence, and flow diagrams.</p>
+      </div>
+      <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+        <div style="background:#fff;border:1px solid rgba(255,255,255,0.16);padding:16px;border-radius:4px"><img src="assets/image31.jpg" alt="Sequence diagrams" style="width:100%"></div>
+        <figcaption style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#a3b4c8">Sequence Diagrams</figcaption>
+      </figure>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:32px">User Requirements</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
+        <p style="margin:0;padding-top:16px;border-top:2px solid #FFCB05;font-size:16px;line-height:1.6">Users must be able to identify the language mode of the multilingual text entry method before starting to communicate in any text messaging app.</p>
+        <p style="margin:0;padding-top:16px;border-top:2px solid #FFCB05;font-size:16px;line-height:1.6">Users must be aware of changes made by autocorrect so they can recognize autocorrect errors while drafting a text message in any language.</p>
+        <p style="margin:0;padding-top:16px;border-top:2px solid #FFCB05;font-size:16px;line-height:1.6">Users must be able to use text assistive features (text suggestions, autocorrect, etc.) to make messaging more error-less to reduce user frustration when communicating in a non-English language.</p>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px">
+      <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+        <div style="background:#fff;border:1px solid rgba(255,255,255,0.16);padding:16px;border-radius:4px"><img src="assets/image8.png" alt="Persona" style="width:100%"></div>
+        <figcaption style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#a3b4c8">Persona</figcaption>
+      </figure>
+      <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+        <div style="background:#fff;border:1px solid rgba(255,255,255,0.16);padding:16px;border-radius:4px"><img src="assets/image24.png" alt="Storyboard" style="width:100%"></div>
+        <figcaption style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#a3b4c8">Storyboard</figcaption>
+      </figure>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px">
+      <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+        <div style="background:#fff;border:1px solid rgba(255,255,255,0.16);padding:16px;border-radius:4px"><img src="assets/image23.jpg" alt="Paper prototype" style="width:100%;max-height:560px;object-fit:contain"></div>
+        <figcaption style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#a3b4c8">Paper Prototype</figcaption>
+      </figure>
+      <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+        <div style="background:#fff;border:1px solid rgba(255,255,255,0.16);padding:16px;border-radius:4px"><img src="assets/image25.png" alt="High fidelity prototype" style="width:100%;max-height:560px;object-fit:contain"></div>
+        <figcaption style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#a3b4c8">High Fidelity Prototype</figcaption>
+      </figure>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:32px">
+      <div style="display:flex;flex-wrap:wrap;gap:16px 64px">
+        <h3 style="flex:0 0 280px;margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:32px">User Evaluation</h3>
+        <p style="flex:1 1 440px;margin:0;font-size:17px;line-height:1.6;color:#dde4ec;text-wrap:pretty">The methods used in this quantitative user evaluation make use of two studies which include a subjective rating of user satisfaction with the design and a standard transcription task empirical study.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+        <div style="background:#0b3563;border:1px solid rgba(255,255,255,0.16);border-radius:4px;padding:28px;display:flex;flex-direction:column;gap:12px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#FFCB05;text-transform:uppercase;letter-spacing:0.06em">Phase 1</span>
+          <p style="margin:0;font-size:16px;line-height:1.6">Have participants use the keyboard settings page on Figma and ask how them to rate the design, clarity and the ease of navigation of the prototype using Likert scale</p>
+        </div>
+        <div style="background:#0b3563;border:1px solid rgba(255,255,255,0.16);border-radius:4px;padding:28px;display:flex;flex-direction:column;gap:12px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#FFCB05;text-transform:uppercase;letter-spacing:0.06em">Phase 2</span>
+          <p style="margin:0;font-size:16px;line-height:1.6">Have participants send a non-English message using the English keyboard and then using the new default keyboard they selected in phase 1</p>
+          <p style="margin:0;font-size:16px;line-height:1.6">For each scenario, measure the number of times the participant corrected an autocorrect suggestion as well as the number of errors that remained when they sent the final message</p>
+          <p style="margin:0;font-size:16px;line-height:1.6">Use a Wilcoxon test to compare the error rates between English and non-English keyboards</p>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <h4 style="margin:0;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:13px;color:#a3b4c8;text-transform:uppercase;letter-spacing:0.06em">Result</h4>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px">
+          <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+            <div style="background:#fff;border:1px solid rgba(255,255,255,0.16);padding:20px;border-radius:4px"><img src="assets/image6.png" alt="Errors table" style="width:100%"></div>
+            <figcaption style="font-size:14px;line-height:1.5;color:#c9d4e0">Number of errors that remained with the English (E) keyboard vs. Non-English (Non-E) keyboard</figcaption>
+          </figure>
+          <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+            <div style="background:#fff;border:1px solid rgba(255,255,255,0.16);padding:20px;border-radius:4px"><img src="assets/image5.png" alt="Satisfaction table" style="width:100%"></div>
+            <figcaption style="font-size:14px;line-height:1.5;color:#c9d4e0">Overall satisfaction (Sat) with design on a Likert scale of 1-5</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- PROJECT 2 -->
+  <article id="p2" data-screen-label="Project 02" style="padding:96px 0;border-top:1px solid #F4F1E8;display:flex;flex-direction:column;gap:72px">
+    <header style="display:flex;flex-direction:column;gap:20px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#FFCB05;letter-spacing:0.06em;text-transform:uppercase">Project Two</div>
+      <h2 style="margin:0;max-width:960px;font-family:'Newsreader',serif;font-weight:400;font-size:clamp(36px,5vw,60px);line-height:1.05;letter-spacing:-0.015em;text-wrap:balance">AI-enhanced Closed-loop Communication Annotation Tool for Medical Education</h2>
+    </header>
+
+    <div style="display:flex;flex-wrap:wrap;gap:32px 64px">
+      <div style="flex:1 1 360px;display:flex;flex-direction:column;gap:14px">
+        <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:32px">Background</h3>
+        <p style="margin:0;font-size:17px;line-height:1.6;color:#dde4ec;text-wrap:pretty">Closed-Loop Communication (CLC) is important in the medical field for preventing communication errors and is frequently evaluated as a critical skill during medical training.</p>
+      </div>
+      <blockquote style="flex:1 1 440px;margin:0;padding-left:0;display:flex;flex-direction:column;gap:14px">
+        <p style="margin:0;font-family:'Newsreader',serif;font-style:italic;font-size:21px;line-height:1.5;text-wrap:pretty">“In closed-loop communication, the person receiving instruction or information repeats it back to make sure the message is understood correctly, and the sender confirms to “close the loop.” It does not require more time, and in fact, it is likely to save time. But ultimately, it's an important tool that protects our patients from communication errors that can lead to serious consequences.”</p>
+        <cite style="font-style:normal;font-family:'JetBrains Mono',monospace;font-size:13px;color:#a3b4c8">— American Hospital Association</cite>
+      </blockquote>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;align-items:stretch">
+      <div style="background:#fff;border:1px solid rgba(255,255,255,0.16);border-radius:4px;padding:20px;display:flex;align-items:center"><img src="assets/image2.png" alt="Closed-loop communication cycle" style="width:100%"></div>
+      <div style="background:#fff;border:1px solid rgba(255,255,255,0.16);border-radius:4px;padding:20px;display:flex;align-items:center;justify-content:center"><img src="assets/image18.png" alt="Call-out, check-back, closed-loop" style="width:100%;max-width:360px"></div>
+      <div style="background:#FFCB05;color:#00274C;border-radius:4px;padding:28px;display:flex;flex-direction:column;justify-content:center;gap:16px;font-size:16px;line-height:1.5">
+        <p style="margin:0"><span style="font-family:'JetBrains Mono',monospace;color:#00274C">A:</span> John, could you get 20 ml saline solution?</p>
+        <p style="margin:0"><span style="font-family:'JetBrains Mono',monospace;color:#00274C">B:</span> Okay, Mark. I’ll get 20 ml saline solution.</p>
+        <p style="margin:0"><span style="font-family:'JetBrains Mono',monospace;color:#00274C">A:</span> Thanks!</p>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:32px 64px">
+      <h3 style="flex:0 0 280px;margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:32px">Motivation</h3>
+      <div style="flex:1 1 440px;display:flex;flex-direction:column;gap:16px;font-size:17px;line-height:1.6;color:#dde4ec">
+        <p style="margin:0;text-wrap:pretty">While practicing CLC is important for training medical students, instructors have to rely on their memory to evaluate their performance, without quantitative metrics and records of specific instances for improvements.</p>
+        <p style="margin:0;text-wrap:pretty">Manually labeling all transcribed training recordings requires medical expertise and is too expensive and time-consuming.</p>
+        <p style="margin:0;text-wrap:pretty;color:#F4F1E8;font-weight:500">We hope to assist medical instructors by creating a tool for evaluating the use of closed-loop communication to improve the students’ communication skills and prevent miscommunications in emergency situations.</p>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <p style="margin:0;font-family:'Newsreader',serif;font-size:26px;line-height:1.3">Integrate AI-technology to assist medical professionals using our annotation tool.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px">
+        <div style="border:1px solid rgba(255,255,255,0.22);border-radius:4px;padding:24px;display:flex;flex-direction:column;gap:10px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#a3b4c8;text-transform:uppercase;letter-spacing:0.06em">AI</span>
+          <p style="margin:0;font-size:15px;line-height:1.55">NLP models give predictions</p>
+          <p style="margin:0;font-size:15px;line-height:1.55">Identify how many closed-loops are there in a training session</p>
+        </div>
+        <div style="border:1px solid rgba(255,255,255,0.22);border-radius:4px;padding:24px;display:flex;flex-direction:column;gap:10px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#a3b4c8;text-transform:uppercase;letter-spacing:0.06em">Human</span>
+          <p style="margin:0;font-size:15px;line-height:1.55">Manually label the data</p>
+        </div>
+        <div style="background:#FFCB05;color:#00274C;border-radius:4px;padding:24px;display:flex;flex-direction:column;gap:10px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:0.06em">AI prediction + human adjustment</span>
+          <p style="margin:0;font-size:15px;line-height:1.55">Better in terms of accuracy and efficiency</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:28px">Contextual Inquiry: User Requirements</h3>
+        <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;border-top:1px solid rgba(255,255,255,0.22)">
+          <li style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.22);font-size:16px;line-height:1.5">Users must be able to understand the definition of CLC in medical context.</li>
+          <li style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.22);font-size:16px;line-height:1.5">Users must be able to distinguish between a request and a response in a relevant conversation.</li>
+          <li style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.22);font-size:16px;line-height:1.5">Users must be able to recognize unresponded requests.</li>
+          <li style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.22);font-size:16px;line-height:1.5">Users must be able to identify which part of the annotation tool is assisted by AI.</li>
+        </ul>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:28px">Design for Manual and AI Interface</h3>
+        <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;border-top:1px solid rgba(255,255,255,0.22)">
+          <li style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.22);font-size:16px;line-height:1.5">Present the transcript (AI-generated) clearly along with the video of the VR training session for more context</li>
+          <li style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.22);font-size:16px;line-height:1.5">Distinguish between instances of CLC and unresponded questions or requests</li>
+          <li style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.22);font-size:16px;line-height:1.5">Intuitively modify and add new CLC pairs and unresponded instances to the transcript</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:32px">Design Process and Workflow</h3>
+      <ol style="margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:rgba(255,255,255,0.22);border:1px solid rgba(255,255,255,0.22)">
+        <sc-for list="{{ workflow }}" as="step" hint-placeholder-count="7">
+          <li style="background:#00274C;padding:20px;display:flex;flex-direction:column;gap:10px"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#FFCB05">{{ step.n }}</span><span style="font-size:14px;line-height:1.5">{{ step.t }}</span></li>
+        </sc-for>
+      </ol>
+    </div>
+
+    <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+      <div style="aspect-ratio:16/9;border:1px solid rgba(255,255,255,0.22);border-radius:4px;background:repeating-linear-gradient(135deg,#0b3563 0 10px,#08305a 10px 20px);display:flex;align-items:center;justify-content:center">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#a3b4c8;background:#00274C;padding:6px 10px">prototype screen recording / screenshot</span>
+      </div>
+      <figcaption style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#a3b4c8">High Fidelity Prototype</figcaption>
+    </figure>
+
+    <div style="display:flex;flex-direction:column;gap:32px">
+      <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:32px">User Evaluation</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#a3b4c8;text-transform:uppercase;letter-spacing:0.06em">Methods</span>
+          <p style="margin:0;font-size:16px;line-height:1.6">Two groups of users</p>
+          <p style="margin:0;font-size:16px;line-height:1.6">Each participant is asked to label the same transcript using our labeling interface either with or without AI predictions preloaded.</p>
+          <p style="margin:0;font-size:16px;line-height:1.6">The time and accuracy for each user is recorded and calculated.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#a3b4c8;text-transform:uppercase;letter-spacing:0.06em">Metrics</span>
+          <p style="margin:0;font-size:16px;line-height:1.6">Task completion time</p>
+          <p style="margin:0;font-size:16px;line-height:1.6">Precision</p>
+          <p style="margin:0;font-size:16px;line-height:1.6">Recall</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#a3b4c8;text-transform:uppercase;letter-spacing:0.06em">Example user labels for CLC</span>
+          <p style="margin:0;font-family:'JetBrains Mono',monospace;font-size:15px;line-height:1.6">[1, 2, 3], [3, 4], [5, 6], [9, 10] …</p>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <h4 style="margin:0;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:13px;color:#a3b4c8;text-transform:uppercase;letter-spacing:0.06em">Evaluation Results</h4>
+        <div style="overflow-x:auto;background:#0b3563;border:1px solid rgba(255,255,255,0.16);border-radius:4px">
+          <table style="width:100%;min-width:640px;border-collapse:collapse;font-size:15px">
+            <thead>
+              <tr style="text-align:right;font-family:'JetBrains Mono',monospace;font-size:12px;color:#a3b4c8">
+                <th style="text-align:left;padding:14px 20px;font-weight:500;border-bottom:1px solid #F4F1E8">Methods</th>
+                <th style="padding:14px 20px;font-weight:500;border-bottom:1px solid #F4F1E8">Recall (count)</th>
+                <th style="padding:14px 20px;font-weight:500;border-bottom:1px solid #F4F1E8">Recall (score)</th>
+                <th style="padding:14px 20px;font-weight:500;border-bottom:1px solid #F4F1E8">Precision (count)</th>
+                <th style="padding:14px 20px;font-weight:500;border-bottom:1px solid #F4F1E8">Precision (score)</th>
+                <th style="padding:14px 20px;font-weight:500;border-bottom:1px solid #F4F1E8">Time (min)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="text-align:right;font-variant-numeric:tabular-nums"><td style="text-align:left;padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.16);font-weight:500">AI</td><td style="padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.16)">1.0000</td><td style="padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.16)">0.7554</td><td style="padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.16)">0.7949</td><td style="padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.16)">0.5424</td><td style="padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.16);color:#a3b4c8">N/A</td></tr>
+              <tr style="text-align:right;font-variant-numeric:tabular-nums"><td style="text-align:left;padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.16);font-weight:500">Manual</td><td style="padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.16)">0.7679</td><td style="padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.16)">0.6133</td><td style="padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.16)">0.9201</td><td style="padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.16)">0.7137</td><td style="padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.16)">25.13</td></tr>
+              <tr style="text-align:right;font-variant-numeric:tabular-nums;background:rgba(255,203,5,0.12)"><td style="text-align:left;padding:14px 20px;font-weight:600;color:#FFCB05">AI + Manual</td><td style="padding:14px 20px">0.8750</td><td style="padding:14px 20px">0.6952</td><td style="padding:14px 20px">0.9331</td><td style="padding:14px 20px">0.6707</td><td style="padding:14px 20px;font-weight:600;color:#FFCB05">17.19</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px 32px;font-size:14px;line-height:1.55;color:#c9d4e0">
+          <p style="margin:0"><strong style="color:#F4F1E8;font-weight:600">Recall</strong> - portion of ground truth identified by the user</p>
+          <p style="margin:0"><strong style="color:#F4F1E8;font-weight:600">Precision</strong> - portion of user labels that occur in ground truth</p>
+          <p style="margin:0"><strong style="color:#F4F1E8;font-weight:600">Count</strong> - valid (binary) if a label contain two lines overlapping with ground truth</p>
+          <p style="margin:0"><strong style="color:#F4F1E8;font-weight:600">Score</strong> - with penalty for partially correct labels, e.g., [1, 2, 3] vs [2, 3, 4]</p>
+          <p style="margin:0;font-family:'JetBrains Mono',monospace;font-size:13px">E.g., GT [1, 2, 3] / Label [2, 3, 4] → Count: 1 / Score: |GT ∩ Label| / |GT ∪ Label| = 2/4 = 0.5</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- PROJECT 3 -->
+  <article id="p3" data-screen-label="Project 03" style="padding:96px 0;border-top:1px solid #F4F1E8;display:flex;flex-direction:column;gap:72px">
+    <header style="display:flex;flex-direction:column;gap:20px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#FFCB05;letter-spacing:0.06em;text-transform:uppercase">Project Three</div>
+      <h2 style="margin:0;max-width:1000px;font-family:'Newsreader',serif;font-weight:400;font-size:clamp(36px,5vw,60px);line-height:1.05;letter-spacing:-0.015em;text-wrap:balance">Assessing End-user Ability to Verify and Contest Adverse AI Decisions and Seek Recourse from Negative Consequences</h2>
+    </header>
+
+    <div style="display:flex;flex-wrap:wrap;gap:16px 64px">
+      <h3 style="flex:0 0 280px;margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:32px">Ability to Verify and Contest AI Decision</h3>
+      <p style="flex:1 1 440px;margin:0;font-size:19px;line-height:1.6;text-wrap:pretty">The ability of end-users to effectively verify AI decisions and contest and appeal undesirable AI outcomes could reduce the risk of harm when interacting with AI.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
+      <div style="background:#0b3563;border:1px solid rgba(255,255,255,0.16);border-radius:4px;padding:28px;display:flex;flex-direction:column;gap:14px">
+        <span style="font-family:'Newsreader',serif;font-size:30px;color:#FFCB05">Verify</span>
+        <p style="margin:0;font-size:16px;line-height:1.55">Validating the correctness and desirability of AI’s Recommendation.</p>
+        <sc-if value="{{ showRefs }}" hint-placeholder-val="{{ true }}"><p style="margin:0;margin-top:auto;font-size:12px;line-height:1.5;color:#a3b4c8">Fok and Weld et al 2024. In Search of Verifiability: Explanations Rarely Enable Complementary Performance in AI-Advised Decision Making. arXiv:2305.07722</p></sc-if>
+      </div>
+      <div style="background:#0b3563;border:1px solid rgba(255,255,255,0.16);border-radius:4px;padding:28px;display:flex;flex-direction:column;gap:14px">
+        <span style="font-family:'Newsreader',serif;font-size:30px;color:#FFCB05">Contest</span>
+        <p style="margin:0;font-size:16px;line-height:1.55">Reject or oppose wrong or unfavorable decisions from AI.</p>
+        <sc-if value="{{ showRefs }}" hint-placeholder-val="{{ true }}"><p style="margin:0;margin-top:auto;font-size:12px;line-height:1.5;color:#a3b4c8">Venkatasubramanian et al 2020. The philosophical basis of algorithmic recourse. In FAT’20. https://doi.org/10.1145/3351095.3372876</p></sc-if>
+      </div>
+      <div style="background:#0b3563;border:1px solid rgba(255,255,255,0.16);border-radius:4px;padding:28px;display:flex;flex-direction:column;gap:14px">
+        <span style="font-family:'Newsreader',serif;font-size:30px;color:#FFCB05">Seek Recourse</span>
+        <p style="margin:0;font-size:16px;line-height:1.55">Appeal wrong or unfavorable outcome to reverse the AI decision.</p>
+        <sc-if value="{{ showRefs }}" hint-placeholder-val="{{ true }}"><p style="margin:0;margin-top:auto;font-size:12px;line-height:1.5;color:#a3b4c8">Kluttz et al 2022. Shaping our tools: Contestability as a means to promote responsible algorithmic decision making in the professions. In Ethics of Data and Analytics.</p></sc-if>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:32px">How do you Verify AI Recommendations?</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
+        <div style="background:#fff;border:1px solid rgba(255,255,255,0.16);border-radius:4px;padding:24px;display:flex;align-items:center;justify-content:center"><img src="assets/image14.png" alt="Maze task" style="width:100%;max-width:380px"></div>
+        <div style="background:#fff;border:1px solid rgba(255,255,255,0.16);border-radius:4px;padding:24px;display:flex;align-items:center;justify-content:center"><img src="assets/image41.png" alt="Chess recommendation" style="width:100%;max-width:380px"></div>
+      </div>
+    </div>
+
+    <div style="background:#FFCB05;color:#00274C;border-radius:4px;padding:clamp(32px,5vw,64px);display:flex;flex-direction:column;gap:20px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#00274C;text-transform:uppercase;letter-spacing:0.06em">Problem Statement</span>
+      <p style="margin:0;max-width:860px;font-family:'Newsreader',serif;font-size:clamp(24px,3vw,34px);line-height:1.3;text-wrap:pretty">Designing AI that is open to Verification, Contestation, and recours does not mean that the end-user will be able to verify, contest and seek recourse on their own.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:28px">Why is that challenging to Verify and contest AI?</h3>
+        <p style="margin:0;font-size:16px;line-height:1.6">Verifying and contesting AI Requires task expertise.</p>
+        <p style="margin:0;font-size:16px;line-height:1.6">Think about when the task is not maze.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;padding:6px 10px;border:1px solid rgba(255,255,255,0.22);border-radius:100px">Medical diagnosis</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;padding:6px 10px;border:1px solid rgba(255,255,255,0.22);border-radius:100px">Public service</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;padding:6px 10px;border:1px solid rgba(255,255,255,0.22);border-radius:100px">Job Application</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;padding:6px 10px;border:1px solid rgba(255,255,255,0.22);border-radius:100px">Risk Assessment</span>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:28px">Challenges In Verifying And Contesting AI</h3>
+        <p style="margin:0;font-size:16px;line-height:1.6">End-users who are lack AI literacy may not be able to verify, let alone contest AI.</p>
+        <p style="margin:0;font-size:16px;line-height:1.6">Even when they have task expertise, they may be misled by AI’s incorrect recommendations.</p>
+        <sc-if value="{{ showRefs }}" hint-placeholder-val="{{ true }}"><p style="margin:0;font-size:12px;line-height:1.5;color:#a3b4c8">Salimzadeh, et al. 2023. A Missing Piece in the Puzzle: Considering the Role of Task Complexity in Human-AI Decision Making. In UMAP’23. https://doi.org/10.1145/3565472.3592959</p></sc-if>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:24px 64px">
+      <div style="flex:0 0 280px;display:flex;flex-direction:column;gap:12px">
+        <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:32px">Research Questions</h3>
+        <p style="margin:0;font-size:15px;line-height:1.55;color:#c9d4e0">We investigated if simply opening AI to contestation and recourse is enough to empower end-users to detect and counter untrustworthy AI.</p>
+      </div>
+      <ol style="flex:1 1 440px;margin:0;padding:0;list-style:none;display:flex;flex-direction:column;border-top:1px solid rgba(255,255,255,0.22)">
+        <li style="padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.22);display:flex;gap:20px;font-size:17px;line-height:1.5"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#FFCB05;padding-top:3px">RQ1</span><span>Can end-users, who lack task expertise and AI literacy, verify the quality and desirability of AI and its decisions?</span></li>
+        <li style="padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.22);display:flex;gap:20px;font-size:17px;line-height:1.5"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#FFCB05;padding-top:3px">RQ2</span><span>If and when do such end-users choose to contest AI decisions and outcomes of those decisions?</span></li>
+        <li style="padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.22);display:flex;gap:20px;font-size:17px;line-height:1.5"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#FFCB05;padding-top:3px">RQ3</span><span>Do such end-users seek recourse after unfavourable outcomes when using AI?</span></li>
+      </ol>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:16px 64px">
+      <h3 style="flex:0 0 280px;margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:32px">Hypothesis</h3>
+      <div style="flex:1 1 440px;display:flex;flex-direction:column;gap:12px">
+        <p style="margin:0;font-family:'Newsreader',serif;font-size:24px;line-height:1.4;text-wrap:pretty">End-users who lack task expertise and AI literacy cannot verify the quality and desirability of AI decisions and thus do not know when to contest and seek recourse.</p>
+        <p style="margin:0;font-size:15px;color:#c9d4e0">We conducted empirical user study followed by quantitative analysis method.</p>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:32px 64px;align-items:center">
+      <div style="flex:1 1 360px;display:flex;flex-direction:column;gap:14px">
+        <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:32px">Experiment Design</h3>
+        <p style="margin:0;font-size:17px;line-height:1.6;color:#dde4ec">We develop an experiment to conduct user study.</p>
+        <p style="margin:0;font-size:17px;line-height:1.6;color:#dde4ec">We focus on AI that acts as a decision support(DSS) and recommends actions to aid end-users to achieve well defined goals.</p>
+        <p style="margin:0;font-size:17px;line-height:1.6;color:#dde4ec">End-users can then choose to rely on AI advice to make their decisions.</p>
+      </div>
+      <div style="flex:1 1 440px;background:#fff;border:1px solid rgba(255,255,255,0.16);border-radius:4px;padding:24px;display:flex;gap:16px;align-items:center;justify-content:center">
+        <img src="assets/image21.png" alt="End-user" style="width:38%">
+        <img src="assets/image32.png" alt="Trustworthy and untrustworthy AI" style="width:58%">
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px">
+        <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:32px">User Study Interface Functional Prototype</h3>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#a3b4c8">{{ shotLabel }}</span>
+      </div>
+      <div style="background:#fff;border:1px solid rgba(255,255,255,0.16);border-radius:4px;padding:clamp(12px,3vw,32px)">
+        <img src="{{ shot.src }}" alt="User study interface" style="width:100%;aspect-ratio:1368/784;object-fit:contain">
+      </div>
+      <div style="display:flex;gap:8px;overflow-x:auto;padding-bottom:4px">
+        <sc-for list="{{ shots }}" as="s" hint-placeholder-count="10">
+          <button onClick="{{ s.pick }}" style="flex:0 0 112px;padding:4px;background:#fff;border:{{ s.border }};border-radius:3px;cursor:pointer"><img src="{{ s.src }}" alt="" style="width:100%;aspect-ratio:1368/784;object-fit:cover"></button>
+        </sc-for>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:32px">
+      <h3 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:32px">Findings</h3>
+      <p style="margin:0;max-width:900px;font-family:'Newsreader',serif;font-size:clamp(24px,3vw,32px);line-height:1.3;text-wrap:pretty">Our findings showed that end-users who lack task expertise and AI literacy cannot effectively verify and contest AI decisions on their own.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
+        <div style="display:flex;flex-direction:column;gap:10px;padding-top:16px;border-top:2px solid #FFCB05">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#a3b4c8;text-transform:uppercase;letter-spacing:0.06em">Responsibility To End-users</span>
+          <p style="margin:0;font-size:16px;line-height:1.6">Delegating responsibility to verify AI to end-users is detrimental to their ability to contest and reverse unfavorable outcomes.</p>
+          <p style="margin:0;font-size:16px;line-height:1.6">End-users might not even be aware that the AI is the cause of their unfavorable outcomes.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;padding-top:16px;border-top:2px solid #FFCB05">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#a3b4c8;text-transform:uppercase;letter-spacing:0.06em">Conclusion</span>
+          <p style="margin:0;font-size:16px;line-height:1.6">Our findings call for the design solution that will focus on raising end-user AI literacy and task expertise to increase their ability to critically reflect on and verify AI.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+</main>
+
+<footer style="border-top:1px solid #F4F1E8;margin-top:32px">
+  <div style="max-width:1120px;margin:0 auto;padding:64px 32px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:baseline">
+    <span style="font-family:'Newsreader',serif;font-size:40px">Thank you!</span>
+    <a href="#top" style="font-family:'JetBrains Mono',monospace;font-size:13px">Back to top ↑</a>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showReferences&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { i: 0 };
+  renderVals() {
+    const files = ['image27.png','image30.png','image33.png','image46.png','image35.png','image36.png','image37.png','image40.png','image42.png','image43.png'];
+    const i = this.state.i;
+    const workflow = ['Generate transcript from medical simulation video using AI','Process transcript and format for ChatGPT','Prompt engineering with Chat GPT to generate predictions','Update database with video, transcript and predictions','Allow users to update AI-predicted CLC and unresponded instances','Allow for manual labeling','User evaluations and results'].map((t, k) => ({ n: String(k + 1).padStart(2, '0'), t }));
+    return {
+      workflow,
+      showRefs: this.props.showReferences ?? true,
+      shot: { src: 'assets/' + files[i] },
+      shotLabel: `${String(i + 1).padStart(2, '0')} / ${files.length}`,
+      shots: files.map((f, k) => ({
+        src: 'assets/' + f,
+        border: k === i ? '2px solid #FFCB05' : '1px solid rgba(255,255,255,0.16)',
+        pick: () => this.setState({ i: k })
+      }))
+    };
+  }
+}
+</script>
+</body>
+</html>
